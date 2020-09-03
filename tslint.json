@@ -1,0 +1,37 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:latest"],
+  "jsRules": {},
+  "linterOptions": {
+    "exclude": [
+        "src/main/settings.ts"
+    ]
+  },
+  "rules": {
+    "quotemark": [true, "single"],
+    "semicolon": [true, "never"],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": {
+          "objects": "always",
+          "arrays": "always",
+          "functions": "always",
+          "typeLiterals": "never"
+        },
+        "singleline": "never"
+      }
+    ],
+    "interface-name": [true, "never-prefix"],
+    "object-literal-sort-keys": false,
+    "object-literal-key-quotes": false,
+    "no-implicit-dependencies": [true, "dev"],
+    "ordered-imports": false,
+    "no-empty": false,
+    "member-access": false,
+    "no-duplicate-imports": false,
+    "member-ordering": false,
+    "variable-name": false,
+    "no-unused-expression": false
+  }
+}
